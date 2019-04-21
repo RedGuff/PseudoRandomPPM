@@ -3,7 +3,6 @@
 #include <math.h>
 #include <time.h>
 using namespace std;
-// Malassenet.
 // Formats d'image SVG : PovRay, SVG, PPM, x Pixmap...
 // PPM possible : couleurs. ICI.
 // PGM possible : gris.
