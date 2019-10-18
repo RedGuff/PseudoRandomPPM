@@ -97,7 +97,7 @@ int main()
     int maxHz = inputNb(32758, 1, Hz); // PPM can do more.
     string Vz = "Vertical size? ";
     int maxVt = inputNb(32758, 1, Vz); // PPM can do more.
-    int maxRGB = inputNb(65536, 1, "Nombre de valeurs par composantes ? (256 est bien !) "); // 65536 bcause of PPM.
+    int maxRGB = inputNb(65536, 1, "Nombre de valeurs par composantes ? (256 est bien !) "); // 65536 because of PPM.
     const int nbComposantRGB = 3; // 3 in PPM.
     int rgb = 0; // 0 = R, 1 = G, 2 = B. // Tableau en 0.
     string file = "";
@@ -113,13 +113,8 @@ vector<vector<vector<int> > > v = vector<vector<vector<int> > >( maxHz, vector<v
             for (rgb=0; rgb<nbComposantRGB; rgb++) { // 1 = R, 2 = G, 3 = B. // Tableau en 0.
                 v[a][b][rgb] = rand() % maxRGB + 0; // ints tous inclus.;
             }
-
         }
-
     }
-
-
-
 
 cout << "Image ok, now writing file." << endl;
 // displayVector3D: // Chiant à faire fonctionner en fonction.
@@ -132,7 +127,6 @@ cout << "Image ok, now writing file." << endl;
         {
             cout << v[a][b][c] << endl;
         }
-
     }
 }
 
@@ -176,12 +170,10 @@ if (errorFile==0)
 {
     clog << "file Ok: " << file << endl;
 }
-
         outfile.close();
     }
 
 clog << "End!"<< endl;
-
 
 //system("open picture.ppm"); // https://www.youtube.com/watch?v=fbH005SzEMc
     return 0;
